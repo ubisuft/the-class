@@ -1,0 +1,146 @@
+html {
+    
+  background-size: auto;  
+  
+
+}
+body {
+    position: relative;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* fills viewport height, but allows scrolling */
+  /* Remove flexbox properties */
+  }
+  
+  
+    body::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background-image: url('damask-fleur-de-lis-pattern-origin-seamless-background-wallpaper-fleur-de-lis-pattern-scandinavian-batik-digital-texture-design-for-print-printable-fabric-saree-border-vector.jpg');
+        background-repeat: repeat;
+        background-size: auto; /* or a specific size like 200px */
+        opacity: 1;
+        z-index: -1;
+        height: 100%;
+  }
+h1, h2, h3 {
+
+color: rgb(214, 112, 39);
+font-family: 'medievalsharp';
+text-align: center;
+}
+p, h4, h5, h6 {
+   
+   color:rgb(62, 72, 99);
+   font-family: 'cinzel decorative', cursive;
+   text-align: center;
+   font-weight: bold;
+}
+#rect {
+    width: 50%;          /* or whatever width you want */
+  min-height: 100%vh;
+  margin: 80px auto 40px;  /* top, horizontal auto (centers), bottom */
+  background-color: #fae7d7;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #883131; /* Dark brown */
+    padding: 15px 30px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .logo-name {
+    display: flex;
+    align-items: center;
+    font-family: 'medievalsharp';
+  }
+  
+  .logo {
+    height: 50px;
+    width: auto;
+    margin-right: 15px;
+  }
+  
+  .site-title {
+    font-family: 'medievalsharp';
+    font-size: 1.8rem;
+    margin: 0;
+    color: rgb(219, 238, 255);
+  }
+  
+  .site-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    font-family: 'medievalsharp';
+  }
+  
+  .site-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-family: 'medievalsharp';
+    display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  }
+  
+  .site-nav a:hover {
+    color: #FFD700; /* Gold on hover */
+  }
+  li {
+    font-size: 25px;
+    color: rgb(218, 180, 189);
+  }
+  .site-nav ul li {
+    flex: 1;                /* each <li> grows equally */
+    text-align: center;     /* center text inside each item */
+  }
+  h5{
+    font-size: 20px;
+  }
+  .seals-container {
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+    margin-top: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+  
+  .seal {
+    text-align: center;
+    max-width: 150px;
+    width: 100%;
+  }
+  
+  .seal img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    aspect-ratio: 1 / 1; /* Ensures square seals */
+    border: 2px solid #654321;
+    border-radius: 8px;
+  }
+  
+  .seal-description {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
